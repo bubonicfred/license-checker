@@ -70,7 +70,7 @@
   },
   "devDependencies": {
     "detectionizr": "*",
-    "eslint": "^9.1.0",
+    "eslint": "^5.0.0",
     "format-package-json": "^0.2.0",
     "git-contributors": "^0.2.3",
     "github-changes": "^2.0.3",

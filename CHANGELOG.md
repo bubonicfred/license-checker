@@ -1,11 +1,13 @@
 ## Change Log
 
 ### v25.0.1 (2019/01/10 19:29 +00:00)
+
 - [f1c835b](https://github.com/davglass/license-checker/commit/f1c835b991b65dc928eafe64c29b73df9e703169) Updated readme with new args (@davglass)
 - [ada667f](https://github.com/davglass/license-checker/commit/ada667f28e8ef4e96b5b6059fe05541d05ca936c) changelog (@davglass)
 - [7813f0d](https://github.com/davglass/license-checker/commit/7813f0db3b51f7cc4cd37d8e7b4670f9005fed06) contrib (@davglass)
 
 ### v25.0.0 (2019/01/10 15:09 +00:00)
+
 - [cdb77d9](https://github.com/davglass/license-checker/commit/cdb77d9a2b36cd87503f32265a0ee388b25c24ae) 25.0.0 (@davglass)
 - [b897345](https://github.com/davglass/license-checker/commit/b89734549bc05fb5e143083fdf6d3959d87eb2b8) [Fixes #136] Document --start option and add the depth option for looking into root dependencies or infinitely (@davglass)
 - [#185](https://github.com/davglass/license-checker/pull/185) Merge pull request #185 from theboolean/fix/exclude-packages-and-private (@theboolean)
@@ -13,6 +15,7 @@
 - [987a60f](https://github.com/davglass/license-checker/commit/987a60fbb58052cf36d5a80e6252e81136bb1dd8) changes 24.1.0 (@davglass)
 
 ### v24.1.0 (2018/12/14 20:54 +00:00)
+
 - [18ab8a1](https://github.com/davglass/license-checker/commit/18ab8a1eb478d1354429ca4318c1df3de3e4cbb1) 24.1.0 (@davglass)
 - [1dca0f6](https://github.com/davglass/license-checker/commit/1dca0f616aebdef2d398c130a2a4f86c2b4e88c8) Changelog (@davglass)
 - [#188](https://github.com/davglass/license-checker/pull/188) Fix for #153: remove deprecated package 'spdx' (#188) (@rogierschouten)
@@ -21,11 +24,13 @@
 - [98c4dc6](https://github.com/davglass/license-checker/commit/98c4dc670fdebb6e58b62b38ebcb12302e5b1db5) changes (@davglass)
 
 ### v24.0.1 (2018/10/11 16:40 +00:00)
+
 - [d72eae8](https://github.com/davglass/license-checker/commit/d72eae8bcb80d8582e6d12c5e2664e9c19135709) 24.0.1 (@davglass)
 - [9433e64](https://github.com/davglass/license-checker/commit/9433e640ea9f629aad5f00c224a9f61026b8116d) [Fixes #181] - Removed extra line break with --cvs (@davglass)
 - [65baa28](https://github.com/davglass/license-checker/commit/65baa28f532f87ebb75a32578c7ac5837806d12f) contrib and changes (@davglass)
 
 ### v24.0.0 (2018/10/09 21:12 +00:00)
+
 - [84d64a2](https://github.com/davglass/license-checker/commit/84d64a28fa971c3bfb20b9e9de27cafbe6e8481b) 24.0.0 (@davglass)
 - [#180](https://github.com/davglass/license-checker/pull/180) Feature: Exclude Private Packages (#180) (Jonny Reeves)
 - [#179](https://github.com/davglass/license-checker/pull/179) Merge pull request #179 from jonny-improbable/fix/fix-strict-checks (@jonny-improbable)
@@ -33,6 +38,7 @@
 - [890ca17](https://github.com/davglass/license-checker/commit/890ca17d179bc43a6cb7cff962d69d1521dc9ac2) changelog (@davglass)
 
 ### v23.0.0 (2018/10/09 14:37 +00:00)
+
 - [f243287](https://github.com/davglass/license-checker/commit/f243287fbce6da33838a226ddfe8c412535390d4) 23.0.0 (@davglass)
 - [#178](https://github.com/davglass/license-checker/pull/178) Merge pull request #178 from jonny-improbable/fix/filtering (@jonny-improbable)
 - [#175](https://github.com/davglass/license-checker/pull/175) Merge pull request #175 from jonny-improbable/patch-1 (@jonny-improbable)
@@ -41,11 +47,13 @@
 - [ee723af](https://github.com/davglass/license-checker/commit/ee723af79889a4d98ed067494a58f6aa41a44ac7) changes (@davglass)
 
 ### v22.0.0 (2018/10/08 19:00 +00:00)
+
 - [bd398c3](https://github.com/davglass/license-checker/commit/bd398c3bce0279699c9aad1dc4b592f398a75766) 22.0.0 (@davglass)
 - [#172](https://github.com/davglass/license-checker/pull/172) Merge pull request #172 from fzaninotto/exclude-packages (@fzaninotto)
 - [014fd96](https://github.com/davglass/license-checker/commit/014fd9613fe5460e0b7a0fc118a659a337e25e2c) added changes (@davglass)
 
 ### v21.0.0 (2018/10/06 13:24 +00:00)
+
 - [d75fe43](https://github.com/davglass/license-checker/commit/d75fe43d61a9d5b6696d71a663e25a53fd3d44f7) 21.0.0 (@davglass)
 - [05cb221](https://github.com/davglass/license-checker/commit/05cb221359de4ffe1039f586cd9e8fb7cb9d6398) [Fixes #174] - Moved private and unknown detection above filtering (@davglass)
 - [b1d5700](https://github.com/davglass/license-checker/commit/b1d570088236dfb90253bdac27763523b2e74ffb) Add an excludePackages option (@fzaninotto)
@@ -53,6 +61,7 @@
 - [6c61a7b](https://github.com/davglass/license-checker/commit/6c61a7bd102466c702065d42706392c11717cc1d) changelog (@davglass)
 
 ### v20.2.0 (2018/07/30 13:49 +00:00)
+
 - [28dc521](https://github.com/davglass/license-checker/commit/28dc5218dec3340778bd801593275ad1b222e53f) 20.2.0 (@davglass)
 - [#169](https://github.com/davglass/license-checker/pull/169) Merge pull request #169 from codepunkt/restrict_packages (@codepunkt)
 - [5e4b274](https://github.com/davglass/license-checker/commit/5e4b274e955485fb2aba37e65fec913b8042f38d) refactor: restore previous code style (@codepunkt)
@@ -61,11 +70,13 @@
 - [5f63f87](https://github.com/davglass/license-checker/commit/5f63f8766a17e589b57db99bda4eb54d91b85b77) changes and contrib (@davglass)
 
 ### v20.1.0 (2018/06/07 14:33 +00:00)
+
 - [970882a](https://github.com/davglass/license-checker/commit/970882a09b345c7f32496431e5ca4c069ad7e320) 20.1.0 (@davglass)
 - [#165](https://github.com/davglass/license-checker/pull/165) Merge pull request #165 from santiagocanti/fix-exclude-not-adding-custom-licenses (@santiagocanti)
 - [89e48a9](https://github.com/davglass/license-checker/commit/89e48a9d3d0c9f2e48bfcee0dc3563ce4b652e22) Fix exclude not including custom licenses (@santiagocanti)
 
 ### v20.0.0 (2018/05/17 14:14 +00:00)
+
 - [0e89310](https://github.com/davglass/license-checker/commit/0e8931021df777cb401d9a332fa2a8c9a2c49eb2) 20.0.0 (@davglass)
 - [c36a5c9](https://github.com/davglass/license-checker/commit/c36a5c99bb4f68816e4e19cad5090ba3c7ba67a4) changes (@davglass)
 - [ccb66f3](https://github.com/davglass/license-checker/commit/ccb66f3410a4589e6f2b7cf1c3aefb1446bab460) contributors (@davglass)
@@ -74,11 +85,13 @@
 - [3eafe24](https://github.com/davglass/license-checker/commit/3eafe249ad662af727a9b7472f7ad6c1b9a73ade) fixing test coverage with switch to nyc from istanbul (@davglass)
 
 ### v19.0.0 (2018/04/30 14:51 +00:00)
+
 - [7e83a06](https://github.com/davglass/license-checker/commit/7e83a069d23c104c3cd8257eb64666704ecca465) 19.0.0 (@davglass)
 - [e5eb49b](https://github.com/davglass/license-checker/commit/e5eb49bcb5546dbc681f736f159d63908cd39ce9) upgrading packages (@davglass)
 - [442aee6](https://github.com/davglass/license-checker/commit/442aee69b5d44e47bfd2e441c4e1f86d387e49c6) Changlog (@davglass)
 
 ### v18.1.0 (2018/04/30 14:16 +00:00)
+
 - [82ec91b](https://github.com/davglass/license-checker/commit/82ec91bb02e6bf998164b62b4aa827198156ad4c) 18.1.0 (@davglass)
 - [4b546d3](https://github.com/davglass/license-checker/commit/4b546d38ce91bcbe8d21e7bc53e44635b0447fc2) contrib (@davglass)
 - [#155](https://github.com/davglass/license-checker/pull/155) Merge pull request #155 from ktmouk/supress-path-property (@ktmouk)
@@ -96,6 +109,7 @@
 - [955bbf6](https://github.com/davglass/license-checker/commit/955bbf6070ffcd9f0d01ef37bb84ffbac65e007b) remove the old status badge (@honzajavorek)
 
 ### v18.0.0 (2018/03/20 12:30 +00:00)
+
 - [315de0b](https://github.com/davglass/license-checker/commit/315de0b1a881cf8737c3c0131c217c4820df13a8) 18.0.0 (@davglass)
 - [76655d5](https://github.com/davglass/license-checker/commit/76655d59bad95c2e52724aaa3a0cf036f0e60bd6) changelog (@davglass)
 - [c8aa823](https://github.com/davglass/license-checker/commit/c8aa823342b7a250d510582c8a03dd76af50bd9c) added contributors (@davglass)
@@ -113,6 +127,7 @@
 - [8f59c3b](https://github.com/davglass/license-checker/commit/8f59c3b494f69b1d51535bcff80c0e006d0ef6bb) drop support for node 4, add support for node 8 (@honzajavorek)
 
 ### v17.0.0 (2018/03/19 13:26 +00:00)
+
 - [cd5fdd8](https://github.com/davglass/license-checker/commit/cd5fdd8e94267d7d8f29e86dd9cbf8b694c037f1) 17.0.0 (@davglass)
 - [13c11ee](https://github.com/davglass/license-checker/commit/13c11eeea1b1a3e012de62536100fce91c355c8b) updated readme and help text (@davglass)
 - [#144](https://github.com/davglass/license-checker/pull/144) Merge pull request #144 from creising/parser-fixes (@creising)
@@ -123,11 +138,13 @@
 - [38d63e2](https://github.com/davglass/license-checker/commit/38d63e2c2c3fd6c11012fb69b1470b2ba06d5554) [fixes #128] - Added --onlyAllow option (@davglass)
 
 ### v16.0.0 (2018/01/18 15:02 +00:00)
+
 - [#131](https://github.com/davglass/license-checker/pull/131) Merge pull request #131 from mischah/patch-1 (@mischah)
 - [e341d17](https://github.com/davglass/license-checker/commit/e341d1701092be87309ec4b51fa6eb23f7e9a589) Fix typo in Readme (@mischah)
 - [cc38a20](https://github.com/davglass/license-checker/commit/cc38a2047bf41b6fe25266114a13a9bf54133e04) updated license text (@davglass)
 
 ### v15.0.0 (2017/10/19 14:24 +00:00)
+
 - [a9bd001](https://github.com/davglass/license-checker/commit/a9bd001b649bfa186bae5598bb8c67ff56383599) 15.0.0 (@davglass)
 - [db621fa](https://github.com/davglass/license-checker/commit/db621fa6beeff870699c33be484bf49816ab7866) changelog (@davglass)
 - [#124](https://github.com/davglass/license-checker/pull/124) Merge pull request #124 from neverendingqs/app/stricterguesses (@neverendingqs)
@@ -136,10 +153,12 @@
 - [3061c87](https://github.com/davglass/license-checker/commit/3061c87363f3416d86ca6c2ba7b2bfa77def0e73) changes (@davglass)
 
 ### v14.0.0 (2017/08/28 13:22 +00:00)
+
 - [b2a4403](https://github.com/davglass/license-checker/commit/b2a440309c1537c52e5c5a2106f11e72d5b784ec) 14.0.0 (@davglass)
 - [#122](https://github.com/davglass/license-checker/pull/122) Added --failOn [list] mode (#122) (@tobilg)
 
 ### v13.1.0 (2017/08/25 15:00 +00:00)
+
 - [ee25265](https://github.com/davglass/license-checker/commit/ee25265f92fe0d3b603da6b8c88d175e0d1f2fa5) 13.1.0 (@davglass)
 - [5bb9a17](https://github.com/davglass/license-checker/commit/5bb9a17f89d7e180b3a9d929ebc073135262bd2f) changes (@davglass)
 - [b1e0392](https://github.com/davglass/license-checker/commit/b1e0392afa4b511b7c532125cd3165a828d3d4e3) added contrib (@davglass)
@@ -150,21 +169,25 @@
 - [3e9d320](https://github.com/davglass/license-checker/commit/3e9d320acb2e9f14297d6a4355680f34a9b0609d) changes (@davglass)
 
 ### v13.0.3 (2017/08/04 17:15 +00:00)
+
 - [2caf76b](https://github.com/davglass/license-checker/commit/2caf76be7f2849e153ee28410f3b7a41df3283b5) 13.0.3 (@davglass)
 - [fadddc8](https://github.com/davglass/license-checker/commit/fadddc895ef9c6f182e2283c5605a8c1d8fa8a25) [fixes #117] fixed minor URL parsing (@davglass)
 - [e58a868](https://github.com/davglass/license-checker/commit/e58a868268aefd97d735b364bd87d03140d76482) changes (@davglass)
 
 ### v13.0.2 (2017/07/18 16:24 +00:00)
+
 - [2c712b7](https://github.com/davglass/license-checker/commit/2c712b7c7e6efe916d60f3ef3125f7f019c46d59) 13.0.2 (@davglass)
 - [ef812c1](https://github.com/davglass/license-checker/commit/ef812c1168901d08b97dbd450a64ca03bb7062ad) [fixes #114] - Custom URL/File parsing skipped if file found on disk (@davglass)
 
 ### v13.0.1 (2017/07/17 12:48 +00:00)
+
 - [a1bf8f1](https://github.com/davglass/license-checker/commit/a1bf8f152b100d81b44757b3b7e141df6a971c44) 13.0.1 (@davglass)
 - [e6d0c89](https://github.com/davglass/license-checker/commit/e6d0c893b8a86e12493f7a5c22fd74ef26267994) contrib & changes (@davglass)
 - [#113](https://github.com/davglass/license-checker/pull/113) Use LICENSE file in preference to README (#113) (@ibeucaly)
 - [6b7f79f](https://github.com/davglass/license-checker/commit/6b7f79f654e21903ea37e4391fba3601ece32e90) changes (@davglass)
 
 ### v13.0.0 (2017/07/14 12:49 +00:00)
+
 - [dd9e880](https://github.com/davglass/license-checker/commit/dd9e880abd234d683d8c1e57e7a5f889c9156de4) 13.0.0 (@davglass)
 - [051b20b](https://github.com/davglass/license-checker/commit/051b20b0c4b35f223f724705a0025dafc809373f) cleaned up some tests (@davglass)
 - [#110](https://github.com/davglass/license-checker/pull/110) FEATURE: Recognise some custom licenses by file or url (#110) (@dancrumb)
@@ -173,12 +196,14 @@
 - [#108](https://github.com/davglass/license-checker/pull/108) FEATURE: Detect private modules and report them as UNLICENSED (#108) (@dancrumb)
 
 ### v12.1.0 (2017/07/12 16:48 +00:00)
+
 - [dc944e5](https://github.com/davglass/license-checker/commit/dc944e54d55d77b0ef6b6321d9abee847662ccb8) 12.1.0 (@davglass)
 - [d415c58](https://github.com/davglass/license-checker/commit/d415c580b04bc5eefa592dc9f9a0a31b244c1bd3) updated contrib and changes (@davglass)
 - [#107](https://github.com/davglass/license-checker/pull/107) Merge pull request #107 from dancrumb/feature/support-for-public-domain-licenses (@dancrumb)
 - [0c55770](https://github.com/davglass/license-checker/commit/0c55770294167161c48b79cc82a15a6545154a87) FEATURE: Add support for Public Domain licenses (@dancrumb)
 
 ### v12.0.0 (2017/07/05 13:33 +00:00)
+
 - [8b74fa1](https://github.com/davglass/license-checker/commit/8b74fa1fe3b5edb0d217aa3ce86f4662eb024621) 12.0.0 (@davglass)
 - [4f3367c](https://github.com/davglass/license-checker/commit/4f3367c2bf2e9713a6cccd11341f7f4fa70ed400) changes & contrib (@davglass)
 - [#106](https://github.com/davglass/license-checker/pull/106) Merge pull request #106 from helio-frota/licensefile-readme (@helio-frota)
@@ -186,17 +211,20 @@
 - [b59d90d](https://github.com/davglass/license-checker/commit/b59d90d8705f6f728c817b89936f95097d26857b) changes & contrib (@davglass)
 
 ### v11.0.0 (2017/05/30 13:33 +00:00)
+
 - [258df10](https://github.com/davglass/license-checker/commit/258df102da484943088da8e0b6160b80c0e703cd) 11.0.0 (@davglass)
 - [#102](https://github.com/davglass/license-checker/pull/102) Merge pull request #102 from xswordsx/multiple-licenses (@xswordsx)
 - [c5c8b0f](https://github.com/davglass/license-checker/commit/c5c8b0f408f2a26259a7b1109f7cc135ed5bf9c4) Check for SPDX-compatible licenses (@xswordsx)
 
 ### v10.1.0 (2017/05/25 16:16 +00:00)
+
 - [b52a16d](https://github.com/davglass/license-checker/commit/b52a16d0ba414e7287f82325dd65619cd76afdd1) 10.1.0 (@davglass)
 - [f911a99](https://github.com/davglass/license-checker/commit/f911a9919033254945ecbbf69362cb171436688e) contrib & changes (@davglass)
 - [#100](https://github.com/davglass/license-checker/pull/100) Suppress JSON properties with custom format (#100) (@tbbstny)
 - [ed5b3ab](https://github.com/davglass/license-checker/commit/ed5b3ab50825f0be032958f8233dd3000ee98e85) changelog (@davglass)
 
 ### v10.0.0 (2017/05/17 13:51 +00:00)
+
 - [b2c2283](https://github.com/davglass/license-checker/commit/b2c2283cf5a937e64a07ab200ec2379e481903b6) 10.0.0 (@davglass)
 - [a0406ac](https://github.com/davglass/license-checker/commit/a0406ac2c7a0b1037ca31b47e36d316b9c088938) [fixes #96] - do not replace newline, etc in licenses for exporting to json/markdown (@davglass)
 - [98a03fa](https://github.com/davglass/license-checker/commit/98a03fa700ef6d038cc2f9104ea5cf17c82a10ad) [fixes #97] - Added a newline to the output file (@davglass)
@@ -205,6 +233,7 @@
 - [f82b535](https://github.com/davglass/license-checker/commit/f82b535d3b7f152fa00bb4680e94af18d1c1421d) changelog (@davglass)
 
 ### v9.0.3 (2017/04/10 13:42 +00:00)
+
 - [a0fd60f](https://github.com/davglass/license-checker/commit/a0fd60f972b7c84a32117b3dfc1f95bfa2282f27) 9.0.3 (@davglass)
 - [#95](https://github.com/davglass/license-checker/pull/95) Merge pull request #95 from abtris/prefix-component (@abtris)
 - [3b80272](https://github.com/davglass/license-checker/commit/3b80272a217687c2f0cd7a0c1e98775064d820ff) test: add test for csvComponentPrefix (@abtris)
@@ -212,11 +241,13 @@
 - [5b2eea1](https://github.com/davglass/license-checker/commit/5b2eea12d8c54068a01a2cf1fd9bdeca8c1f0fa2) added contrib (@davglass)
 
 ### v9.0.2 (2017/04/05 14:55 +00:00)
+
 - [f24833b](https://github.com/davglass/license-checker/commit/f24833bce846f608ec3d8c327d335da56c42b895) 9.0.2 (@davglass)
 - [#94](https://github.com/davglass/license-checker/pull/94) Merge pull request #94 from timbru31/fix-comma-exclude (@timbru31)
 - [2d08a77](https://github.com/davglass/license-checker/commit/2d08a77030362c7ab03ac12358dd524c0be47eee) contrib & changelog (@davglass)
 
 ### v9.0.1 (2017/04/05 13:09 +00:00)
+
 - [9f1a1f3](https://github.com/davglass/license-checker/commit/9f1a1f32194a9bb312858f624e303af1ad4f61ca) 9.0.1 (@davglass)
 - [c99f612](https://github.com/davglass/license-checker/commit/c99f612fee22d9eb03db0ad41e7918fbaf6e8ed9) added test for licenseText (@davglass)
 - [#93](https://github.com/davglass/license-checker/pull/93) Merge pull request #93 from abtris/licenseText-just-in-customFormat (@abtris)
@@ -226,6 +257,7 @@
 - [4e02eca](https://github.com/davglass/license-checker/commit/4e02eca6e8bd332ff6d90e5039cacb50f0df1bf3) updated contribs and changelog (@davglass)
 
 ### v9.0.0 (2017/04/04 12:26 +00:00)
+
 - [267c80e](https://github.com/davglass/license-checker/commit/267c80efac89eef70c71a12b8f12b3dc8e6d58dd) 9.0.0 (@davglass)
 - [057af47](https://github.com/davglass/license-checker/commit/057af47bc52ac526f646ba21496f338689801809) added licenseFile assertion to tests (@davglass)
 - [#92](https://github.com/davglass/license-checker/pull/92) Merge pull request #92 from abtris/includeFileContent (@abtris)
@@ -234,6 +266,7 @@
 - [6395498](https://github.com/davglass/license-checker/commit/639549890c54a12043244579ad0c0d5972309fb2) changes and contrib (@davglass)
 
 ### v8.0.4 (2017/02/15 16:21 +00:00)
+
 - [28d379a](https://github.com/davglass/license-checker/commit/28d379aca51da7a47af324bc6feb63736ea02295) 8.0.4 (@davglass)
 - [#89](https://github.com/davglass/license-checker/pull/89) Merge pull request #89 from Pawamoy/master (@Pawamoy)
 - [#90](https://github.com/davglass/license-checker/pull/90) Merge pull request #90 from drewfish/bsd-source-code (@drewfish)
@@ -242,16 +275,19 @@
 - [2529d31](https://github.com/davglass/license-checker/commit/2529d3118dfae53f1e01056ec99f5c542cb8d63e) changes (@davglass)
 
 ### v8.0.3 (2016/11/10 17:04 +00:00)
+
 - [66fd7b5](https://github.com/davglass/license-checker/commit/66fd7b5ad5577cc2c85668a7c6607365c86a2c85) 8.0.3 (@davglass)
 - [#87](https://github.com/davglass/license-checker/pull/87) Merge pull request #87 from drewfish/guess-cc0 (@drewfish)
 - [668bbd3](https://github.com/davglass/license-checker/commit/668bbd38fd5148f99c5263f4e0506e04d5e3f8a0) guess CC0-1.0, upgraded jshint (@drewfish)
 
 ### v8.0.2 (2016/11/09 21:57 +00:00)
+
 - [0bdedd8](https://github.com/davglass/license-checker/commit/0bdedd8cb990e1f5ffacde1c12cc708185a5b866) 8.0.2 (@davglass)
 - [ef67bb4](https://github.com/davglass/license-checker/commit/ef67bb454373352343faa49d4dc978a295bd1544) updated semver (@davglass)
 - [14b5c85](https://github.com/davglass/license-checker/commit/14b5c8551ccbb5c5ce8aa76fb5367857c891d013) Changelog (@davglass)
 
 ### v8.0.1 (2016/11/09 21:51 +00:00)
+
 - [594871d](https://github.com/davglass/license-checker/commit/594871d6197a030121f940500495e6ca7d82f02c) 8.0.1 (@davglass)
 - [c243663](https://github.com/davglass/license-checker/commit/c243663b0ab8a0126251292a57b2c47369a51ebf) added contrib (@davglass)
 - [#86](https://github.com/davglass/license-checker/pull/86) Merge pull request #86 from drewfish/copying (@drewfish)
@@ -260,6 +296,7 @@
 - [1f93a07](https://github.com/davglass/license-checker/commit/1f93a072632aad0660b63f61c56c3bd2fe109474) changelog (@davglass)
 
 ### v8.0.0 (2016/09/09 13:23 +00:00)
+
 - [44c2c48](https://github.com/davglass/license-checker/commit/44c2c48ae177915523fdf89a74474fe0953408bf) 8.0.0 (@davglass)
 - [b5f5c6a](https://github.com/davglass/license-checker/commit/b5f5c6ae03a8c60c52fdd308f1721744a4baaa99) [fixes #78] - include notice file if found (@davglass)
 - [dfcbd6f](https://github.com/davglass/license-checker/commit/dfcbd6f4966adc74e065f71e45cbd08ba8fe62ab) changelog (@davglass)
@@ -267,14 +304,17 @@
 - [ef857b7](https://github.com/davglass/license-checker/commit/ef857b7e9bab706299a1cc565ec5d144893af424) [fixes #77] fixed readme file name parsing, made it more strict (@davglass)
 
 ### v7.1.1 (2016/09/07 19:16 +00:00)
+
 - [28be6d4](https://github.com/davglass/license-checker/commit/28be6d4128a3625cf8ed37ba149e79ed3a41b4fa) changelog (@davglass)
 
 ### v7.1.0 (2016/09/07 15:12 +00:00)
+
 - [9f8b7f1](https://github.com/davglass/license-checker/commit/9f8b7f1c367dfe86342ee5f5cc97171bf97281aa) 7.1.0 (@davglass)
 - [60fce1a](https://github.com/davglass/license-checker/commit/60fce1a24a4ef5add98a08dd8c8a85870db3f4a6) Fixed order of operations for parsing (@davglass)
 - [9d4db11](https://github.com/davglass/license-checker/commit/9d4db112794b8110a1bfe0abfe2d3e63bc812299) Updated changelog (@davglass)
 
 ### v7.0.0 (2016/09/06 14:50 +00:00)
+
 - [a3a08da](https://github.com/davglass/license-checker/commit/a3a08da70b680d724045f655e107f36b16b45fea) 7.0.0 (@davglass)
 - [b993399](https://github.com/davglass/license-checker/commit/b9933994472162cc9c4292cb42f2900e17a5167f) added contrib (@davglass)
 - [d783029](https://github.com/davglass/license-checker/commit/d7830297b053496e45b7145b3cfa5809ac8ab1d1) Fixes #76 - If readme data not found, look for it on disk (@davglass)
@@ -284,6 +324,7 @@
 - [dd768c6](https://github.com/davglass/license-checker/commit/dd768c6c8cbc39b596881a2eca582ad4bb816879) Added contributors (@davglass)
 
 ### v6.0.0 (2016/08/26 19:46 +00:00)
+
 - [4bca140](https://github.com/davglass/license-checker/commit/4bca140db752b7b98ad1e261e5ee965d84995741) 6.0.0 (@davglass)
 - [889ff17](https://github.com/davglass/license-checker/commit/889ff171aeb01a2180f4c9100ca9ea528a264d81) updating tests (@davglass)
 - [ed18801](https://github.com/davglass/license-checker/commit/ed188010351c4afb44db0d32dfa1025de53bf10f) Merge branch 'nodeback' of git://github.com/bengl/license-checker into bengl-nodeback (@davglass)
@@ -298,16 +339,19 @@
 - [26ffc6f](https://github.com/davglass/license-checker/commit/26ffc6f63d43c372c9a18f9c0c137608b3d5e4fa) use nodeback/errback (@bengl)
 
 ### v5.1.2 (2016/05/04 18:32 +00:00)
+
 - [7101c77](https://github.com/davglass/license-checker/commit/7101c77667ad134fe01f02c298e7df2a4080e311) 5.1.2 (@davglass)
 - [#67](https://github.com/davglass/license-checker/pull/67) Merge pull request #67 from graingert/patch-2 (@graingert)
 - [a6ee290](https://github.com/davglass/license-checker/commit/a6ee2904eb7fcced220dcfe8548f80ec74fde3a2) Upgrade read-installed (@graingert)
 - [42e29c6](https://github.com/davglass/license-checker/commit/42e29c637940959121842762d74921bece5e8d93) migrating tests from vows to mocha (@davglass)
 
 ### v5.1.1 (2016/04/14 13:20 +00:00)
+
 - [6ae0334](https://github.com/davglass/license-checker/commit/6ae03348ca8e5835ac732028afdab664a381cfc4) 5.1.1 (@davglass)
 - [0720a46](https://github.com/davglass/license-checker/commit/0720a46569f3e12eb398165526944f307e08aad6) Fixes #64 - Turn off color for --json/markdown/csv options (@davglass)
 
 ### v5.1.0 (2016/03/09 15:50 +00:00)
+
 - [86772d2](https://github.com/davglass/license-checker/commit/86772d202b63d4a4c6729b9a774193ca6ef5cb3f) 5.1.0 (@davglass)
 - [#61](https://github.com/davglass/license-checker/pull/61) Merge pull request #61 from sgtdck/master (@sgtdck)
 - [6547ac1](https://github.com/davglass/license-checker/commit/6547ac1ded58560c7c4abdfc68fa69d17b81fe1e) Removed obsolete d[key].name assignment from tests (@sgtdck)
@@ -315,6 +359,7 @@
 - [629da20](https://github.com/davglass/license-checker/commit/629da201e0d1170057fd9efe05efcb293d2f1bda) Added latest contributors (@davglass)
 
 ### v5.0.1 (2016/02/08 15:57 +00:00)
+
 - [33731fc](https://github.com/davglass/license-checker/commit/33731fca482936a7a18fffe3fca2f3cd41e3a625) 5.0.1 (@davglass)
 - [fe06eae](https://github.com/davglass/license-checker/commit/fe06eaef8844d050ad0f80d576a221dd605131de) Fixed repplace (@davglass)
 - [997914f](https://github.com/davglass/license-checker/commit/997914fd6f94030452d4d9bf549eb156ae8ef7c0) fix git+https URLs (@graingert)
@@ -324,6 +369,7 @@
 - [7f71c53](https://github.com/davglass/license-checker/commit/7f71c53833cf1318ffe84215fcb1291f9ce4fbd5) updated contributors (@davglass)
 
 ### v5.0.0 (2016/01/22 15:31 +00:00)
+
 - [#55](https://github.com/davglass/license-checker/pull/55) Merge pull request #55 from davglass/devflag (@davglass)
 - [ff1d8f2](https://github.com/davglass/license-checker/commit/ff1d8f20d5d7248a4f61e2fc9279fdfea91a6ec6) supporting --production and --development flags (@davglass)
 - [#53](https://github.com/davglass/license-checker/pull/53) Merge pull request #53 from swashcap/enhancement/#46-verbose-output (@swashcap)
@@ -335,21 +381,25 @@
 - [7312daf](https://github.com/davglass/license-checker/commit/7312daf7af195a1b9d1b1f290fae15963fbb2ab4) Add debug to project. (@swashcap)
 
 ### v4.2.0 (2015/10/20 13:44 +00:00)
+
 - [3583d92](https://github.com/davglass/license-checker/commit/3583d925e96fc9f63b3bbf0110b11c8448aed0e7) 4.2.0 (@davglass)
 - [981eeda](https://github.com/davglass/license-checker/commit/981eeda898084dea88d54ea29c5bda93c5313fb6) Fixes #49: Default to unknown if licenses null and added ISC support (@davglass)
 
 ### v4.1.2 (2015/09/29 13:46 +00:00)
+
 - [ba946dd](https://github.com/davglass/license-checker/commit/ba946dd1065e762c36b27dcecdd9bb7389ad18d4) 4.1.2 (@davglass)
 - [#48](https://github.com/davglass/license-checker/pull/48) Merge pull request #48 from CantemoInternal/master (@CantemoInternal)
 - [e314a6d](https://github.com/davglass/license-checker/commit/e314a6d1f505d19478c33871640a763fabff6abd) Fix json, csv and markdown output for license-checker (@mattiasa)
 
 ### v4.1.1 (2015/09/12 14:39 +00:00)
+
 - [c918314](https://github.com/davglass/license-checker/commit/c918314bfc687b647d1d288bb5857dd1caac1393) 4.1.1 (@davglass)
 - [#47](https://github.com/davglass/license-checker/pull/47) Merge pull request #47 from tmpvar/ensure-bin-runs (@tmpvar)
 - [a842eca](https://github.com/davglass/license-checker/commit/a842ecae4f008c07df3039dcaacd4641d7273625) add missing } (@tmpvar)
 - [1d513bb](https://github.com/davglass/license-checker/commit/1d513bb673d726f34286061446f965e46d96170e) ensure bin/license-checker works at a high-level (@tmpvar)
 
 ### v4.1.0 (2015/09/09 14:52 +00:00)
+
 - [a4bb437](https://github.com/davglass/license-checker/commit/a4bb437ffa806c0832f877da2de7a107863d0a1f) 4.1.0 (@davglass)
 - [ddd317a](https://github.com/davglass/license-checker/commit/ddd317a5a09344f0021812b8dee2f39bbbbf07a0) fixed all of the windows line endings (@davglass)
 - [11e6487](https://github.com/davglass/license-checker/commit/11e64870484435e1e6f8efb9b0f13e6b2f737a6b) Fix issues caused by merge (@ptusch)
@@ -373,6 +423,7 @@
 - [4aa7065](https://github.com/davglass/license-checker/commit/4aa7065c5eef88d49c3684369b2edd9802c3f374) Add tests for customFormat (@ptusch)
 
 ### v4.0.0 (2015/09/04 13:40 +00:00)
+
 - [3fbba5b](https://github.com/davglass/license-checker/commit/3fbba5bd5a489ea8c17328eabf71c4d5e9beb17e) 4.0.0 (@davglass)
 - [ce8d661](https://github.com/davglass/license-checker/commit/ce8d66108a49af7855c16231ce675c567a2ffe7f) tests: added 100% coverage for license file (@davglass)
 - [#42](https://github.com/davglass/license-checker/pull/42) Merge pull request #42 from ptusch/ft_onlyunknown (@ptusch)
@@ -398,6 +449,7 @@
 - [8102091](https://github.com/davglass/license-checker/commit/8102091f7949fa8b73cfc803e4aead3624b81148) Add functionality to add a custom format (@ptusch)
 
 ### v3.1.0 (2015/06/29 14:25 +00:00)
+
 - [59e1e58](https://github.com/davglass/license-checker/commit/59e1e58ca0bea1cd38e3da1712fe7ca624d860b0) 3.1.0 (@davglass)
 - [0e33f7a](https://github.com/davglass/license-checker/commit/0e33f7a2cb9fa69d13d1e2b5c69f70f885e09e08) reformatted code, fixed lint issues and added tests (@davglass)
 - [83a7f09](https://github.com/davglass/license-checker/commit/83a7f0933d1cc1f331279e53fcce13e4efface91) Merge branch 'asMarkdown' of git://github.com/ptusch/license-checker into ptusch-asMarkdown (@davglass)
@@ -406,31 +458,38 @@
 - [67dca36](https://github.com/davglass/license-checker/commit/67dca365b941a7265e4a98d2de533b22c761b169) Remove color tags (@ptusch)
 
 ### v3.0.3 (2015/06/03 13:35 +00:00)
+
 - [7475c12](https://github.com/davglass/license-checker/commit/7475c129bf291289e4616d9692a962ae537401e8) 3.0.3 (@davglass)
 - [c7dae0f](https://github.com/davglass/license-checker/commit/c7dae0fe5317a17b3aef61e8c118fafc6bb43a56) spdx license (@davglass)
 
 ### v3.0.2 (2015/05/12 20:29 +00:00)
+
 - [01f3b53](https://github.com/davglass/license-checker/commit/01f3b5384998be6243d38e0d95a4478e5fe3cfa5) 3.0.2 (@davglass)
 - [fc0c083](https://github.com/davglass/license-checker/commit/fc0c0832ee291c55e53efe6b37a7b9d89f191bc7) defensive code, fixes #34 (@davglass)
 
 ### v3.0.1 (2015/05/04 12:28 +00:00)
+
 - [0479570](https://github.com/davglass/license-checker/commit/0479570faf87eccc9b37fbb25afaee7faaec6636) 3.0.1 (@davglass)
 - [d85e355](https://github.com/davglass/license-checker/commit/d85e355b55998952facf202eabf8d374fec69a7e) Checking for valid path first (@davglass)
 
 ### v3.0.0 (2015/04/24 14:38 +00:00)
+
 - [e22b61d](https://github.com/davglass/license-checker/commit/e22b61d5d32fef7ffb18627f55a97e1863a78096) 3.0.0 (@davglass)
 - [fde9635](https://github.com/davglass/license-checker/commit/fde963583dd207eca4badffb3e0d033a038f17b5) always try to find and log the license file (@davglass)
 
 ### v2.0.2 (2015/01/26 18:18 +00:00)
+
 - [490f31d](https://github.com/davglass/license-checker/commit/490f31d6820f068814cfe27adf3af1ac6d58f733) 2.0.2 (@davglass)
 - [a3fefdb](https://github.com/davglass/license-checker/commit/a3fefdb8fafd7ec64714defb793d757a9e8ad065) fixes #30 (@davglass)
 
 ### v2.0.1 (2015/01/12 18:34 +00:00)
+
 - [898fbd5](https://github.com/davglass/license-checker/commit/898fbd53fa289338cf8a9a1735eea440c2a6c525) 2.0.1 (@davglass)
 - [2da23db](https://github.com/davglass/license-checker/commit/2da23db2f240e7e73efdf93cc554e4d7783af225) cleaned up spacing and moved vars around (@davglass)
 - [d47dbe4](https://github.com/davglass/license-checker/commit/d47dbe45c992dbbdb15bfb45e8af7f18ee0ca737) fixes #29 (@davglass)
 
 ### v2.0.0 (2014/12/04 16:34 +00:00)
+
 - [f94edfe](https://github.com/davglass/license-checker/commit/f94edfec7a9914b4a36f455e8bffc6230d6f7a5e) 2.0.0 (@davglass)
 - [f4c7b1a](https://github.com/davglass/license-checker/commit/f4c7b1a3d4e9c0e4753a9b267e51714fe7f7051e) syntax cleanup (@davglass)
 - [d189623](https://github.com/davglass/license-checker/commit/d1896234a5649621ee57ff9a901877d769217194) Document CLI options in Readme. (@timoxley)
@@ -440,39 +499,47 @@
 - [b725080](https://github.com/davglass/license-checker/commit/b725080d2dbdfddbf0994867577d4c5e3dc0ee2a) Don't print info messages to stdout. (@timoxley)
 
 ### v1.0.1 (2014/11/27 15:23 +00:00)
+
 - [e60f792](https://github.com/davglass/license-checker/commit/e60f792159351aa7ccff1f7af73e289afee261a5) 1.0.1 (@davglass)
 - [3f74178](https://github.com/davglass/license-checker/commit/3f7417822dc8804978d1bae4ed84190d327df15c) Merge branch 'fixinfiniterecursion' of github.com:yzapuchlak/license-checker into yzapuchlak-fixinfiniterecursion (@davglass)
 - [dc78ea0](https://github.com/davglass/license-checker/commit/dc78ea0dca546283440c89fec2dc6818dc4cc1c1) sticking vows 0.8.0 for testing (@davglass)
 - [bd549b3](https://github.com/davglass/license-checker/commit/bd549b3b68e74fddd0e08dac10d5f88a8bb51ca6) Fixed issue where circular dependencies in dependency tree would cause the flatten function to infinitely recurse. If the current key is found to be already in the data object (which means it was already processed), we stop processing that key and return the data object. (@yzapuchlak)
 
 ### v1.0.0 (2014/11/21 13:56 +00:00)
+
 - [917193d](https://github.com/davglass/license-checker/commit/917193dab27147534976b71307a77f48198ca322) 1.0.0 (@davglass)
 - [63e5f9c](https://github.com/davglass/license-checker/commit/63e5f9c77e348720b3867171bcc67541e846d088) added options.filter to checker.init (@davglass)
 
 ### v0.1.2 (2014/11/20 15:48 +00:00)
+
 - [8e5f5f0](https://github.com/davglass/license-checker/commit/8e5f5f0e7f83252e4039f6c7d16cc266acc1a33a) 0.1.2 (@davglass)
 - [3d7a74e](https://github.com/davglass/license-checker/commit/3d7a74e90122f908057b2008ab29d8bd49011291) fixed lint issue (@davglass)
 
 ### v0.1.1 (2014/11/20 15:47 +00:00)
+
 - [750d507](https://github.com/davglass/license-checker/commit/750d5079d32b44ecc984ff7ed672498d1b197235) 0.1.1 (@davglass)
 - [94522e0](https://github.com/davglass/license-checker/commit/94522e099434dfdf163c3f2c5cacb3e6aa196cf8) fixed merge issues (@davglass)
 
 ### v0.1.0 (2014/11/20 15:41 +00:00)
+
 - [8127f5e](https://github.com/davglass/license-checker/commit/8127f5e79eeceb7dfd86cd5f694080e4183dcb11) 0.1.0 (@davglass)
 - [76c71ac](https://github.com/davglass/license-checker/commit/76c71ac46baeca8c349fe5892dcb659e859b9608) Updated to newer read-installed (@davglass)
 
 ### v0.0.10 (2014/08/12 12:48 +00:00)
+
 - [807507d](https://github.com/davglass/license-checker/commit/807507df1a293bc0360adffd725a9f911331ff2b) 0.0.10 (@davglass)
 - [e39ad9b](https://github.com/davglass/license-checker/commit/e39ad9bce6bcd545772c241e2e7aba8f40d5bbbb) Added checking that the license file is a normal file, because otherwise an appropriately named directory crashes the license-checker through EISDIR, illegal operation on a directory.
 - [40ca4da](https://github.com/davglass/license-checker/commit/40ca4dadbc163ca774c87b1de249bd295952faa9) colorize (@couchand)
 
 ### v0.0.9 (2014/07/29 01:48 +00:00)
+
 - [c14ef79](https://github.com/davglass/license-checker/commit/c14ef79f10f950ff0985e7e0b3138147b98ab1ec) 0.0.9 (@davglass)
 - [ba1b66b](https://github.com/davglass/license-checker/commit/ba1b66b6172a2f9f8dbcdc56f40206820bc0916b) Fixes #12 - Using some nicer regexes (@davglass)
 - [bce94d5](https://github.com/davglass/license-checker/commit/bce94d5a8ab2f146356851776b2543df65fbf750) case insensative check (@davglass)
 - [87c3406](https://github.com/davglass/license-checker/commit/87c3406aee2507eaf1d00d592f6dcb59a16e7c48) Allow for LICENCE (@gdw2)
 
 ### v0.0.8 (2014/07/07 20:10 +00:00)
+
 - [6ad6ee2](https://github.com/davglass/license-checker/commit/6ad6ee21813e698e7f995e98dcadafbd961f6a33) 0.0.8 (@davglass)
 - [b8c5815](https://github.com/davglass/license-checker/commit/b8c58151135f57d91fb0d1cfb194d034c012073f) added tests and refactored the code a little (@davglass)
 - [275f276](https://github.com/davglass/license-checker/commit/275f276dc6e6d5635f9cb5b7e9a978e286f2d174) Added --csv option to readme file
@@ -481,6 +548,7 @@
 - [54e2390](https://github.com/davglass/license-checker/commit/54e2390cefd1dc664a15cd3a84347227f889f48b) Added csv output option similar to the existing JSON output option. Requires an output filename.
 
 ### v0.0.7 (2014/02/26 04:52 +00:00)
+
 - [1ce6d42](https://github.com/davglass/license-checker/commit/1ce6d42147b2d0237870818e8059003b331816cf) 0.0.7 (@davglass)
 - [7d04195](https://github.com/davglass/license-checker/commit/7d041959450c68b3c5f427007c43cd6c73c6adfb) Added not check and a proper test (@davglass)
 - [40d6e25](https://github.com/davglass/license-checker/commit/40d6e2580946c3cee1d408ebe28ff523852e8eb2) Undefined handling (@garrows)

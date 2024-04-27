@@ -1,0 +1,15 @@
+version = 1
+
+test_patterns = ["tests/**"]
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  environment = [
+    "nodejs",
+    "mocha"
+  ]
+
+[[transformers]]
+name = "prettier"

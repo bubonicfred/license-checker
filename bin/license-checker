@@ -11,8 +11,8 @@ var checker = require('../lib/index');
 var args = require('../lib/args').parse();
 var mkdirp = require('mkdirp');
 var path = require('path');
-var chalk = require('chalk');
 var fs = require('fs');
+import { chalk } from "chalk";
 
 if (args.help) {
     console.error('license-checker@' + require('../package.json').version);

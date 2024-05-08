@@ -3,9 +3,9 @@ var assert = require('assert'),
     util = require('util'),
     checker = require('../lib/index'),
     args = require('../lib/args'),
-    chalk = require('chalk'),
     fs = require('fs');
 
+import { chalk } from "chalk";
 describe('main tests', function() {
 
     it('should load init', function() {

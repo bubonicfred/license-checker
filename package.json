@@ -87,7 +87,7 @@
     "checker",
     "oss"
   ],
-  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
   "bin": {
     "license-checker": "./bin/license-checker"
   },
@@ -108,7 +108,7 @@
     "url": "http://github.com/davglass/license-checker.git"
   },
   "engines": {
-    "node": "^12.13.0 || >=14.15.0"
+    "node": ">=16"
   },
   "nyc": {
     "check-coverage": true,

@@ -390,7 +390,7 @@ describe('main tests', function() {
         var args = require('../lib/args.js');
 
         it('should handle undefined', function() {
-            var result = args.defaults(undefined);
+            var result = args.defaults();
             assert.equal(result.color, chalk.supportsColor);
             assert.equal(result.start, path.resolve(path.join(__dirname, '../')));
         });
@@ -438,9 +438,9 @@ describe('main tests', function() {
                 }
             }, function(err, d) {
                 Object.keys(d).forEach(function(item) {
-                    assert.notEqual(d[item].name, undefined);
-                    assert.notEqual(d[item].description, undefined);
-                    assert.notEqual(d[item].pewpew, undefined);
+                    assert.notEqual(d[item].name);
+                    assert.notEqual(d[item].description);
+                    assert.notEqual(d[item].pewpew);
                     assert.equal(d[item].pewpew, '<<Should Never be set>>');
                 });
                 done();
@@ -460,7 +460,7 @@ describe('main tests', function() {
             checker.init(args, function(err, filtered) {
                 var customFormatContent = fs.readFileSync(path.join(__dirname, './../customFormatExample.json'), 'utf8');
 
-                assert.notEqual(customFormatContent, undefined);
+                assert.notEqual(customFormatContent);
                 assert.notEqual(customFormatContent, null);
 
                 var customJson = JSON.parse(customFormatContent);
@@ -692,7 +692,7 @@ describe('main tests', function() {
         it('should parse json successfully (File exists + was json)', function() {
             var path = './tests/config/custom_format_correct.json';
             var json = checker.parseJson(path);
-            assert.notEqual(json, undefined);
+            assert.notEqual(json);
             assert.notEqual(json, null);
             assert.equal(json.licenseModified, 'no');
             assert.ok(json.licenseText);

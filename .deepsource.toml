@@ -11,5 +11,3 @@ name = "javascript"
     "mocha"
   ]
 
-[[transformers]]
-name = "prettier"

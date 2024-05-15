@@ -6,13 +6,13 @@ Code licensed under the BSD License:
 http://yuilibrary.com/license/
 */
 
-var checker = require('../lib/index');
+import { init, asCSV, asMarkDown, asSummary, asTree, asFiles } from '../lib/index';
 
-var args = require('../lib/args').parse();
-var mkdirp = require('mkdirp');
-var path = require('path');
-var chalk = require('chalk');
-var fs = require('fs');
+const args = require('../lib/args').parse();
+import { sync } from 'mkdirp';
+import { dirname } from 'path';
+import { blue, dim, green } from 'chalk';
+import { writeFileSync } from 'fs';
 
 if (args.help) {
     console.error('license-checker@' + require('../package.json').version);
@@ -62,7 +62,7 @@ if (args.failOn && args.onlyAllow) {
     }
 }
 
-checker.init(args, function(err, json) {
+init(args, function(err, json) {
 
     var formattedOutput = '';
 
@@ -75,7 +75,7 @@ checker.init(args, function(err, json) {
         var keys = Object.keys(json);
         keys.forEach(function(key) {
             var keyParts = key.split('@');
-            var colorizedKey = chalk.blue(keyParts[0]) + chalk.dim('@') + chalk.green(keyParts[1]);
+            var colorizedKey = blue(keyParts[0]) + dim('@') + green(keyParts[1]);
             json[colorizedKey] = json[key];
             delete json[key];
         });
@@ -84,21 +84,21 @@ checker.init(args, function(err, json) {
     if (args.json) {
         formattedOutput = JSON.stringify(json, null, 2) + '\n';
     } else if (args.csv) {
-        formattedOutput = checker.asCSV(json, args.customFormat, args.csvComponentPrefix);
+        formattedOutput = asCSV(json, args.customFormat, args.csvComponentPrefix);
     } else if (args.markdown){
-        formattedOutput = checker.asMarkDown(json, args.customFormat) + '\n';
+        formattedOutput = asMarkDown(json, args.customFormat) + '\n';
     } else if (args.summary) {
-        formattedOutput = checker.asSummary(json);
+        formattedOutput = asSummary(json);
     } else {
-        formattedOutput = checker.asTree(json);
+        formattedOutput = asTree(json);
     }
 
     if (args.files) {
-        checker.asFiles(json, args.files);
+        asFiles(json, args.files);
     } else if (args.out) {
-        var dir = path.dirname(args.out);
-        mkdirp.sync(dir);
-        fs.writeFileSync(args.out, formattedOutput, 'utf8');
+        var dir = dirname(args.out);
+        sync(dir);
+        writeFileSync(args.out, formattedOutput, 'utf8');
     } else {
         console.log(formattedOutput);
     }

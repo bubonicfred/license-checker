@@ -1,10 +1,10 @@
 
-var join = require('path').join;
-var format = require('format-package-json');
-var GitContributors = require('git-contributors').GitContributors;
-var opts = join(__dirname, '../');
-var pkg = join(__dirname, '../package.json');
-var json = require(pkg);
+import { join } from 'path';
+import format from 'format-package-json';
+import { GitContributors } from 'git-contributors';
+const opts = join(__dirname, '../');
+const pkg = join(__dirname, '../package.json');
+const json = require(pkg);
  
 json.contributors = []; //clear it
 

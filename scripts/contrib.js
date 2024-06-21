@@ -9,12 +9,12 @@ var json = require(pkg);
 
 json.contributors = []; // clear it
 
-GitContributors.list(opts, function (err, result) {
-  result.forEach(function (item) {
-    json.contributors.push([item.name, "<" + item.email + ">"].join(" "));
+GitContributors.list(opts, function(err, result) {
+  result.forEach(function(item) {
+    json.contributors.push([ item.name, "<" + item.email + ">" ].join(" "));
   });
   json.contributors.sort();
-  format(pkg, json, function () {
+  format(pkg, json, function() {
     console.log("Wrote %s contributors to: %s", result.length, pkg);
   });
 });

@@ -6,17 +6,17 @@ Code licensed under the BSD License:
 http://yuilibrary.com/license/
 */
 
-var checker = require('../lib/index');
+const checker = require('../lib/index');
 
-var args = require('../lib/args').parse();
-var mkdirp = require('mkdirp');
-var path = require('path');
-var chalk = require('chalk');
-var fs = require('fs');
+const args = require('../lib/args').parse();
+const mkdirp = require('mkdirp');
+const path = require('path');
+const chalk = require('chalk');
+const fs = require('fs');
 
 if (args.help) {
-    console.error('license-checker@' + require('../package.json').version);
-    var usage = [
+    console.error(`license-checker@${require('../package.json').version}`);
+    const usage = [
         '',
         '   --production only show production dependencies.',
         '   --development only show development dependencies.',
@@ -55,16 +55,16 @@ if (args.failOn && args.onlyAllow) {
     console.error('--failOn and --onlyAllow can not be used at the same time. Choose one or the other.');
     process.exit(1);
 } else {
-    var argValue = args.failOn || args.onlyAllow;
+    const argValue = args.failOn || args.onlyAllow;
     if (argValue && argValue.indexOf(',') >= 0) {
-        var argName = args.failOn ? 'failOn' : 'onlyAllow';
-        console.warn('Warning: As of v17 the --' + argName + ' argument takes semicolons as delimeters instead of commas (some license names can contain commas)');
+        const argName = args.failOn ? 'failOn' : 'onlyAllow';
+        console.warn(`Warning: As of v17 the --${argName} argument takes semicolons as delimeters instead of commas (some license names can contain commas)`);
     }
 }
 
 checker.init(args, function(err, json) {
 
-    var formattedOutput = '';
+    let formattedOutput = '';
 
     if (!!err) {
         console.error('Found error');
@@ -72,21 +72,21 @@ checker.init(args, function(err, json) {
     }
 
     if (shouldColorizeOutput(args)) {
-        var keys = Object.keys(json);
+        const keys = Object.keys(json);
         keys.forEach(function(key) {
-            var keyParts = key.split('@');
-            var colorizedKey = chalk.blue(keyParts[0]) + chalk.dim('@') + chalk.green(keyParts[1]);
+            const keyParts = key.split('@');
+            const colorizedKey = chalk.blue(keyParts[0]) + chalk.dim('@') + chalk.green(keyParts[1]);
             json[colorizedKey] = json[key];
             delete json[key];
         });
     }
 
     if (args.json) {
-        formattedOutput = JSON.stringify(json, null, 2) + '\n';
+        formattedOutput = `${JSON.stringify(json, null, 2)}\n`;
     } else if (args.csv) {
         formattedOutput = checker.asCSV(json, args.customFormat, args.csvComponentPrefix);
     } else if (args.markdown){
-        formattedOutput = checker.asMarkDown(json, args.customFormat) + '\n';
+        formattedOutput = `${checker.asMarkDown(json, args.customFormat)}\n`;
     } else if (args.summary) {
         formattedOutput = checker.asSummary(json);
     } else {
@@ -96,7 +96,7 @@ checker.init(args, function(err, json) {
     if (args.files) {
         checker.asFiles(json, args.files);
     } else if (args.out) {
-        var dir = path.dirname(args.out);
+        const dir = path.dirname(args.out);
         mkdirp.sync(dir);
         fs.writeFileSync(args.out, formattedOutput, 'utf8');
     } else {

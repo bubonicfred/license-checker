@@ -6,7 +6,7 @@ var GitContributors = require('git-contributors').GitContributors;
 var opts = join(__dirname, '../');
 var pkg = join(__dirname, '../package.json');
 var json = require(pkg);
- 
+
 json.contributors = []; //clear it
 
 GitContributors.list(opts, function(err, result) {
@@ -18,7 +18,3 @@ GitContributors.list(opts, function(err, result) {
         console.log('Wrote %s contributors to: %s', result.length, pkg);
     });
 });
-
-
-
-

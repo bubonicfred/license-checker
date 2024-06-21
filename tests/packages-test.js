@@ -27,7 +27,7 @@ describe('bin/license-checker', function() {
         var output = spawn('node', [path.join(__dirname, '../bin/license-checker'), '--json', '--excludePackages', excludedPackages.join(';')], {
             cwd: path.join(__dirname, '../'),
         });
-        
+
         var packages = Object.keys(JSON.parse(output.stdout.toString()));
         excludedPackages.forEach(function(pkg) {
             assert.ok(!packages.includes(pkg));

@@ -15,7 +15,7 @@ describe('main tests', function() {
     it('should load print', function() {
         assert.equal(typeof checker.print, 'function');
     });
-    
+
     describe('should parse local with unknown', function() {
         var output;
         before(function(done) {
@@ -375,7 +375,7 @@ describe('main tests', function() {
                 done();
             });
         });
-        
+
         it('should init with errors (npm packages not found)', function(done) {
             checker.init({
                 start: 'C:\\'
@@ -388,7 +388,7 @@ describe('main tests', function() {
 
     describe('should parse with args', function() {
         var args = require('../lib/args.js');
-        
+
         it('should handle undefined', function() {
             var result = args.defaults(undefined);
             assert.equal(result.color, chalk.supportsColor);
@@ -590,7 +590,7 @@ describe('main tests', function() {
                 done();
             });
         });
-        
+
         it('so we check if there is no license with a star or UNKNOWN found', function() {
             var onlyStarsFound = true;
             Object.keys(output).forEach(function(item) {
@@ -617,7 +617,7 @@ describe('main tests', function() {
             checker.print([{}]);
             console.log = log;
         });
-        
+
         it('a tree', function() {
             var data = checker.asTree([{}]);
             assert.ok(data);
@@ -665,7 +665,7 @@ describe('main tests', function() {
             assert.ok(data);
             assert.ok(data.indexOf('└─') > -1);
         });
-    
+
         it('as files', function() {
             var out = path.join(require('os').tmpdir(), 'lc'),
                 files;
@@ -673,22 +673,22 @@ describe('main tests', function() {
                 foo: {
                     licenses: 'MIT',
                     repository: '/path/to/foo',
-                    licenseFile: path.join(__dirname, '../LICENSE') 
+                    licenseFile: path.join(__dirname, '../LICENSE')
                 },
                 bar: {
                     licenses: 'MIT'
-                } 
+                }
             }, out);
 
             files = fs.readdirSync(out);
             assert.equal('foo-LICENSE.txt', files[0]);
             require('rimraf').sync(out);
         });
-    
+
     });
 
     describe('json parsing', function() {
-    
+
         it('should parse json successfully (File exists + was json)', function() {
             var path = './tests/config/custom_format_correct.json';
             var json = checker.parseJson(path);
@@ -709,12 +709,12 @@ describe('main tests', function() {
             var json = checker.parseJson(path);
             assert.ok(json instanceof Error);
         });
-    
+
         it('should parse json with errors (null passed)', function() {
             var json = checker.parseJson(null);
             assert.ok(json instanceof Error);
         });
-    
+
     });
 
 });

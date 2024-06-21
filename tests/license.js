@@ -70,7 +70,7 @@ describe('license parser', function() {
         var data = license('asdf\nasdf\nBSD\nasdf\n');
         assert.equal(data, 'BSD*');
     });
-    
+
     it('Non-BSD word check', function() {
         var data = license('prefixBSD\n');
         assert.notEqual(data, 'BSD*');
@@ -80,7 +80,7 @@ describe('license parser', function() {
         var data = license('asdf\nasdf\nApache License\nasdf\n');
         assert.equal(data, 'Apache*');
     });
-    
+
     it('Non-Apache word check', function() {
         var data = license('prefixApache License\n');
         assert.notEqual(data, 'Apache*');
@@ -95,7 +95,7 @@ describe('license parser', function() {
         var data = license('asdf\nasdf\nWTFPL\nasdf\n');
         assert.equal(data, 'WTFPL*');
     });
-    
+
     it('Non-WTF word check', function() {
         var data = license('prefixWTFPL\n');
         assert.notEqual(data, 'WTFPL*');

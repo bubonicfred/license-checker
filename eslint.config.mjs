@@ -1,8 +1,8 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
-import { FlatCompat } from '@eslint/eslintrc'
-import StylisticPlugin from '@stylistic/eslint-plugin'
+
+import StylisticPlugin from "@stylistic/eslint-plugin";
 
 export default [
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
@@ -17,6 +17,6 @@ export default [
     semi: true,
     jsx: true,
     // ...
-  }), StylisticPlugin.configs['disable-legacy'],
+  }), StylisticPlugin.configs["disable-legacy"],
   pluginJs.configs.recommended,
 ];

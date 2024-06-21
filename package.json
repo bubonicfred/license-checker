@@ -78,7 +78,7 @@
     "jenkins-mocha": "^6.0.0",
     "locale": "^0.1.0",
     "queue": "^4.4.2",
-    "rimraf": "^2.6.2"
+    "rimraf": "^5.0.5"
   },
   "keywords": [
     "license",

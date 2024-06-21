@@ -115,7 +115,7 @@
     "url": "http://github.com/davglass/license-checker.git"
   },
   "engines": {
-    "node": "^12.13.0 || >=14.15.0"
+    "node": ">=18.0.0"
   },
   "nyc": {
     "check-coverage": true,

@@ -36,11 +36,11 @@ describe('main tests', function() {
         it('and convert to CSV', function() {
             var str = checker.asCSV(output);
             assert.equal('"module name","license","repository"', str.split('\n')[0]);
-            assert.equal('"abbrev@1.0.9","ISC","https://github.com/isaacs/abbrev-js"', str.split('\n')[1]);
+            assert.equal('"@babel/code-frame@7.21.4","MIT","https://github.com/babel/babel"', str.split('\n')[1]);
         });
         it('and convert to MarkDown', function() {
             var str = checker.asMarkDown(output);
-            assert.equal('[abbrev@1.0.9](https://github.com/isaacs/abbrev-js) - ISC', str.split('\n')[0]);
+            assert.equal('[@babel/code-frame@7.21.4](https://github.com/babel/babel) - MIT', str.split('\n')[0]);
         });
     });
 
@@ -76,7 +76,7 @@ describe('main tests', function() {
 
             var str = checker.asCSV(output, format);
             assert.equal('"module name","name","description","pewpew"', str.split('\n')[0]);
-            assert.equal('"abbrev@1.0.9","abbrev","Like ruby\'s abbrev module, but in js","<<Should Never be set>>"', str.split('\n')[1]);
+            assert.equal("@babel/code-frame","@babel/code-frame","Generate errors that contain a code frame that point to source locations.",'"<<Should Never be set>>"', str.split('\n')[1]);
         });
 
         it('and convert to CSV with component prefix', function() {
@@ -88,7 +88,7 @@ describe('main tests', function() {
 
             var str = checker.asCSV(output, format, "main-module");
             assert.equal('"component","module name","name","description","pewpew"', str.split('\n')[0]);
-            assert.equal('"main-module","abbrev@1.0.9","abbrev","Like ruby\'s abbrev module, but in js","<<Should Never be set>>"', str.split('\n')[1]);
+            assert.equal('"main-module","@babel/code-frame@7.21.4","@babel/code-frame","Generate errors that contain a code frame that point to source locations.","<<Should Never be set>>"', str.split('\n')[1]);
 
         });
 
@@ -100,7 +100,7 @@ describe('main tests', function() {
             };
 
             var str = checker.asMarkDown(output, format);
-            assert.equal(' - **[abbrev@1.0.9](https://github.com/isaacs/abbrev-js)**', str.split('\n')[0]);
+            assert.equal(' - **[@babel/code-frame@7.21.4](https://github.com/babel/babel)**', str.split('\n')[0]);
         });
     });
 

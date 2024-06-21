@@ -89,7 +89,7 @@ checker.init(args, (err, json) => {
     } else if (args.summary) {
         formattedOutput = checker.asSummary(json);
     } else {
-        formattedOutput = checker.asTree(json);
+        formattedOutput = checker.asSortedTree(json);
     }
 
     if (args.files) {

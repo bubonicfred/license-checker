@@ -608,7 +608,7 @@ describe('main tests', function() {
     describe('should export', function() {
 
         it('print a tree', function() {
-            var log = console.log;
+            const log = console.log;
             console.log = function(data) {
                 assert.ok(data);
                 assert.ok(data.indexOf('└─') > -1);
@@ -618,13 +618,13 @@ describe('main tests', function() {
         });
 
         it('a tree', function() {
-            var data = checker.asTree([{}]);
+            const data = checker.asSortedTree([{}]);
             assert.ok(data);
             assert.ok(data.indexOf('└─') > -1);
         });
 
         it('as csv', function() {
-            var data = checker.asCSV({
+            const data = checker.asCSV({
                 foo: {
                     licenses: 'MIT',
                     repository: '/path/to/foo'

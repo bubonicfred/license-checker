@@ -1,6 +1,5 @@
 var assert = require('assert'),
     path = require('path'),
-    util = require('util'),
     checker = require('../lib/index'),
     args = require('../lib/args'),
     chalk = require('chalk'),
@@ -380,7 +379,7 @@ describe('main tests', function() {
             checker.init({
                 start: 'C:\\'
             }, function(err) {
-                assert.ok(util.isError(err));
+                assert.ok(console.Error(err));
                 done();
             });
         });

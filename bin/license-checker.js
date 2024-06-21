@@ -7,7 +7,6 @@ http://yuilibrary.com/license/
 */
 
 const checker = require('../lib/index');
-
 const args = require('../lib/args').parse();
 const mkdirp = require('mkdirp');
 const path = require('path');
@@ -62,7 +61,7 @@ if (args.failOn && args.onlyAllow) {
     }
 }
 
-checker.init(args, function(err, json) {
+checker.init(args, (err, json) => {
 
     let formattedOutput = '';
 
@@ -73,7 +72,7 @@ checker.init(args, function(err, json) {
 
     if (shouldColorizeOutput(args)) {
         const keys = Object.keys(json);
-        keys.forEach(function(key) {
+        keys.forEach((key) => {
             const keyParts = key.split('@');
             const colorizedKey = chalk.blue(keyParts[0]) + chalk.dim('@') + chalk.green(keyParts[1]);
             json[colorizedKey] = json[key];

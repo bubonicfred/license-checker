@@ -8,7 +8,7 @@ describe('license parser', function() {
     });
 
     it('undefined check', function() {
-        assert.equal(license(undefined), 'Undefined');
+        assert.equal(license(), 'Undefined');
     });
 
     it('MIT check', function() {

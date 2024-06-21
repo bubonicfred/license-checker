@@ -543,7 +543,7 @@ describe('main tests', function() {
                     publisher: false
                 }
             }, function(err, output) {
-                assert(output.hasOwnProperty('abbrev@1.0.9'), 'Check if the expected package still exists.');
+                assert(Object.prototype.hasOwnProperty.call(output, 'abbrev@1.0.9'), 'Check if the expected package still exists.');
                 assert.equal(output['abbrev@1.0.9'].copyright, 'Copyright (c) Isaac Z. Schlueter and Contributors');
                 done();
             });

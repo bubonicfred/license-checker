@@ -595,33 +595,34 @@ describe("main tests", function () {
     });
   });
 
-  describe("should export", function () {
-    it("print a tree", function () {
-      var log = console.log;
-      console.log = function (data) {
-        assert.ok(data);
-        assert.ok(data.indexOf("└─") > -1);
-      };
-      checker.print([{}]);
-      console.log = log;
-    });
+    describe('should export', function() {
 
-    it("a tree", function () {
-      var data = checker.asTree([{}]);
-      assert.ok(data);
-      assert.ok(data.indexOf("└─") > -1);
-    });
+        it('print a tree', function() {
+            const log = console.log;
+            console.log = function(data) {
+                assert.ok(data);
+                assert.ok(data.indexOf('└─') > -1);
+            };
+            checker.print([{}]);
+            console.log = log;
+        });
 
-    it("as csv", function () {
-      var data = checker.asCSV({
-        foo: {
-          licenses: "MIT",
-          repository: "/path/to/foo",
-        },
-      });
-      assert.ok(data);
-      assert.ok(data.indexOf("\"foo\",\"MIT\",\"/path/to/foo\"") > -1);
-    });
+        it('a tree', function() {
+            const data = checker.asSortedTree([{}]);
+            assert.ok(data);
+            assert.ok(data.indexOf('└─') > -1);
+        });
+
+        it('as csv', function() {
+            const data = checker.asCSV({
+                foo: {
+                    licenses: 'MIT',
+                    repository: '/path/to/foo'
+                }
+            });
+            assert.ok(data);
+            assert.ok(data.indexOf('"foo","MIT","/path/to/foo"') > -1);
+        });
 
     it("as csv with partial data", function () {
       var data = checker.asCSV({

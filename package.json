@@ -57,7 +57,7 @@
     "zodiac403 <zodiac403@gmx.de>"
   ],
   "dependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^4.0.0",
     "debug": "^4.3.4",
     "mkdirp": "^3.0.1",
     "nopt": "^7.2.1",

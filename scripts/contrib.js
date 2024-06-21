@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 var join = require('path').join;
 var format = require('format-package-json');

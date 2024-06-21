@@ -4,6 +4,15 @@
 
 - Drop support for Node versions older than v18
 
+### Refactor
+
+- Convert map to forEach, rename parameters to not conflict with constants
+- **ES2015**: Convert functions to arrow functions
+- **stack**: Create class and convert function properties to method declarations
+- **ES2015**: Inlining + conditionals
+- **ES2015**: Inlining + conditionals
+- **ES2015**: Convert vars to lets/const. Use template literals
+
 ## 26.0.0-alpha.0 (2024-06-21)
 
 ### BREAKING CHANGE

@@ -13,9 +13,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'
-          cache: 'yarn'
-      - name: Install Yarn dependencies
-        run: yarn --immutable
+          cache: 'npm'
+      - name: Install NPM dependencies
+        run: npm install
 
   test:
     name: Test
@@ -31,9 +31,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-      - run: yarn --immutable --immutable-cache
-      - run: yarn test
+          cache: 'npm'
+      - run: npm install
+      - run: npm run test
       - name: Require clean working directory
         shell: bash
         run: |

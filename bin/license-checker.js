@@ -5,14 +5,29 @@ Copyright (c) 2013, Yahoo! Inc. All rights reserved.
 Code licensed under the BSD License:
 http://yuilibrary.com/license/
 */
-
+const output = require(../lib/formats);
 const checker = require("../lib/index");
 const args = require("../lib/args").parse();
-const mkdirp = require("mkdirp");
-const path = require("path");
 const chalk = require("chalk");
-const fs = require("fs");
+const { writeFile } = require("../lib/utils");
 
+function shouldColorizeOutput(args) {
+  return args.color && !args.out && !(args.csv || args.json || args.markdown);
+}
+
+async function processOutput(json, formattedOutput) {
+  try {
+    if (args.files) {
+      await output.asFiles(json, args.files);
+    } else if (args.out) {
+      await writeFile(args.out, formattedOutput);
+    } else {
+      console.log(formattedOutput);
+    }
+  } catch (error) {
+    console.error("Error processing output:", error);
+  }
+}
 if (args.help) {
   console.error(`license-checker@${require("../package.json").version}`);
   const usage = [
@@ -84,31 +99,17 @@ checker.init(args, (err, json) => {
     formattedOutput = `${JSON.stringify(json, null, 2)}\n`;
   }
   else if (args.csv) {
-    formattedOutput = checker.asCSV(json, args.customFormat, args.csvComponentPrefix);
+    formattedOutput = output.asCSV(json, args.customFormat, args.csvComponentPrefix);
   }
   else if (args.markdown) {
-    formattedOutput = `${checker.asMarkDown(json, args.customFormat)}\n`;
+    formattedOutput = `${output.asMarkDown(json, args.customFormat)}\n`;
   }
   else if (args.summary) {
-    formattedOutput = checker.asSummary(json);
+    formattedOutput = output.asSummary(json);
   }
   else {
-    formattedOutput = checker.asSortedTree(json);
+    formattedOutput = output.asSortedTree(json);
   }
+  processOutput(json, formattedOutput);
 
-  if (args.files) {
-    checker.asFiles(json, args.files);
-  }
-  else if (args.out) {
-    const dir = path.dirname(args.out);
-    mkdirp.sync(dir);
-    fs.writeFileSync(args.out, formattedOutput, "utf8");
-  }
-  else {
-    console.log(formattedOutput);
-  }
 });
-
-function shouldColorizeOutput(args) {
-  return args.color && !args.out && !(args.csv || args.json || args.markdown);
-}

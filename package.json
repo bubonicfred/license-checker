@@ -59,7 +59,6 @@
   "dependencies": {
     "chalk": "^4.0.0",
     "debug": "^4.3.5",
-    "mkdirp": "^3.0.1",
     "nopt": "^7.2.1",
     "read-installed": "~4.0.3",
     "semver": "^7.6.2",
